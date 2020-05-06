@@ -1,6 +1,6 @@
 import java.awt.*;
 import javax.swing.*;
-public class Card
+public class Card extends Component
 {
     private String suit;
     private String value;
@@ -16,11 +16,10 @@ public class Card
         return value;
     }
 
-    public void draw(Graphics g, int x, int y, int width, int height, int arcWidth, int arcHeight)
-    {
-        g.setColor(new Color(255,255,255));
-        g.fillRoundRect(x, y, width, height, arcWidth, arcHeight);
-    }
+    // public void paint(Graphics g, Image img)
+    // {
+        // g.drawImage(img, 150, 350, this);
+    // }
 
     public String toString()
     {
